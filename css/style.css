@@ -1,0 +1,35 @@
+main{
+
+  padding: 20px;  
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: darkblue;
+    margin:auto;
+    color:white;
+}
+
+header h1, nav{
+    flex: 1;
+    margin: auto;
+}
+
+header ul{
+
+    list-style-type: none;
+}
+
+header li{
+
+    width:200px;
+    border-style:solid;
+    border-width:2px;
+    margin:10px;
+    font-size:18px;
+    font-weight: bold;
+    text-align: center;
+}
+
