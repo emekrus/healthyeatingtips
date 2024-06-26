@@ -1,13 +1,24 @@
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+
 main{
 
-  padding: 20px;  
+  padding: 10px;  
 }
 
 header{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: darkblue;
+    background-color:black;
     margin:auto;
     color:white;
 }
@@ -33,3 +44,130 @@ header li{
     text-align: center;
 }
 
+header a{
+    color:white;
+    text-decoration: none;
+}
+
+/* pseudo hover class */
+
+header li:hover{
+
+    background-color:darkblue;
+}
+
+
+
+/* This style is for the hero section */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    margin:auto;
+
+}
+
+.hero-text, hero-image, h1, h3, a{
+
+  width: 400px;
+
+}
+
+.hero-button{
+    width: 350px;
+    height: 70px;
+    background: darkblue;
+    font-size:x-large;
+    border-style: solid;
+    color:white;
+}
+
+/* this style is for the intro text section */
+
+.intro-text{
+    margin:auto;
+    width: 400px;
+    height:70px;
+    text-align: center;
+}
+
+/* this style is for the  featured articles section */
+
+.featured{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    margin:auto;
+}
+
+.features{
+
+    width:100%;
+    margin-bottom:10px;
+}
+
+/* this style is for the about us section */
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    margin:auto;
+}
+
+/* this is for the contact us section */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    margin:auto;
+}
+
+/* this for the footer */
+
+footer{
+    text-align:center;
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    header{
+        
+        flex-direction: row;
+        background-color: lavender;
+        color:black;
+       
+    }
+
+    header ul li{
+        
+        display: inline;
+        border-style:none;
+        
+    }
+
+    header a{
+        color: black;
+    }
+
+    .hero{
+        
+        flex-direction: row;
+    
+    }
+    
+
+
+
+}
